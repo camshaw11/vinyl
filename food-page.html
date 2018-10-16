@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vinyl Bar</title>
+    <!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+    <!-- background texture -->
+    <div class="background-section">
+        <div id="texture" class="bg">
+            <img id="bg-texture" src="img/background-texture.png" alt="Background-texture"/>
+        </div>
+    </div>
+<!-- nav -->
+    <div class="wrapper-food">
+        <div id="food2" class="nav">
+            <h1>FOOD</h1>
+            <img src="img/food-vector.svg" alt="Food-banner"/>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="wrapper-menu">
+        <!-- grid one -->
+        <div class="one">
+            <div class="row">
+                <div class="box product food1">
+                    <p class="product_title">EDAMEME</p><br>
+                    <p class="product_description">Ideal w/ an Asahi</p>
+                    <p><span class="product_price price1">5.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box product food2">
+                    <p class="product_title">GARLIC BREAD</p><br>
+                    <p class="product_description">Served w/ hummus</p>
+                    <p><span class="product_price price2">6.5</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box product food3">
+                    <p class="product_title">CHEESY GARLIC BREAD</p><br>
+                    <p class="product_description">A cheesy alternative</p>
+                    <p><span class="product_price">7.5</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+            </div>
+        </div>
+        <!-- grid two -->
+        <div class="two">
+            <div id="platter">
+                <h2 id="platter-side">PLATTER</h2>
+            </div>
+            <div id="cart">
+                <table id="cartTable">
+                    <tbody id="CartContainer">
+                        <tr id="template" class="product">
+                            <td class="product_title"></td>
+                            <td class="product_quantity"></td>
+                            <td><button class='remove add-remove'>-</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <p><strong>$<span class="priceCount"></span></strong></p>
+            <hr>
+            <!-- buttons -->
+            <a href="beer-page.html" class="button button-add-drink"><h2>+ DRINKS</h2></a>
+            <a href="order-page.html" class="button button-order"><h2>ORDER</h2></a>
+            <a href="index.html" class="button button-home"><h2>GO BACK</h2></a>
+        </div>
+        <!-- grid three -->
+        <div class="three">
+            <div class="row">
+                <div class="box product food1">
+                    <p class="product_title">MEAT MADNESS</p><br>
+                    <p class="product_description">Mozzarella & salami</p>
+                    <p><span class="product_price price1 price-pizza">18.0</span></p>
+                    <button class="add add-remove add-pizza">+</button>
+                </div>
+                <div class="box product food2">
+                    <p class="product_title">CHICKY BABY</p><br>
+                    <p class="product_description">Mozzarella & chicken</p>
+                    <p><span class="product_price price2 price-pizza price3">18.0</span></p>
+                    <button class="add add-remove add-pizza">+</button>
+                </div>
+                <div class="box product food3">
+                    <p class="product_title">CALABRESE</p><br>
+                    <p class="product_description">Mozarella & salami</p>
+                    <p><span class="product_price price-pizza price4">16.0</span></p>
+                    <button class="add add-remove add-pizza">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <script src="js/jquery-3.2.1.js"></script>  
+    <script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/cartFunction.min.js"></script>
+</body>
+
+</html>
