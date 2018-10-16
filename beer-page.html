@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vinyl Bar</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+    <!-- background texture -->
+    <div class="background-section">
+      <div id="texture" class="bg">
+          <img id="bg-texture" src="img/background-texture.png" alt="Bacground-texture"/>
+      </div>
+    </div>
+    <!-- nav -->
+    <div class="wrapper-beer">
+        <div id="beer-cider2" class="nav">
+            <h1>BEER & CIDER</h1>
+            <img src="img/beer-vector.svg" alt="Beer-banner"/>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="wrapper-menu">
+      <!-- grid one-->
+        <div class="one">
+            <div class="row">
+                <div class="box1 product beer1">
+                    <p class="product_title">ASAHI</p>
+                    <p><span class="product_price beer-price1">8.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer2">
+                    <p class="product_title">ASAHI-BLACK</p>
+                    <p><span class="product_price beer-price2">8.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer3">
+                    <p class="product_title">BEER-BARON</p>
+                    <p><span class="product_price beer-price3">6.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer4">
+                    <p class="product_title">BRB-CHOSEN-ONE</p>
+                    <p><span class="product_price beer-price4">7.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer5">
+                    <p class="product_title">BRB-PILSNER</p>
+                    <p><span class="product_price beer-price5">7.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer6">
+                    <p class="product_title">SOMERSBY-CIDER</p>
+                    <p><span class="product_price beer-price6">7.5</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+            </div>
+        </div>
+        <!-- grid two -->
+        <div class="two">
+            <div id="platter">
+                <h2 id="platter-side"> PLATTER </h2>
+            </div>
+            <!-- cart container -->
+            <div id="cart">
+                <table id="cartTable">
+                    <tbody id="CartContainer">
+                        <tr id="template" class="product">
+                            <td class="product_title"></td>
+                            <td class="product_quantity"></td>
+                            <td><button class='remove add-remove'>-</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <p><strong>$<span class="priceCount"></span></strong></p>
+            <hr>
+            <!-- buttons -->
+            <a href="food-page.html" class="button button-add-food"><h2>+ FOOD</h2></a>
+            <a href="order-page.html" class="button button-order"><h2>ORDER</h2></a>
+            <a href="index.html" class="button button-home"><h2>GO BACK</h2></a>
+        </div>
+        <!-- grid three -->
+        <div class="three">
+            <div class="row">
+                <div class="box1 product beer1">
+                    <p class="product_title">CARLSBERG</p>
+                    <p><span class="product_price cider-price1">8.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer2">
+                    <p class="product_title">AMENDMENT APA</p>
+                    <p><span class="product_price cider-price2">8.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer3">
+                    <p class="product_title">THOMAS EDIDSON ALE</p>
+                    <p><span class="product_price cider-price3">8.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer4">
+                    <p class="product_title">MUMBO JUMBO IPA</p>
+                    <p><span class="product_price cider-price4">8.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer5">
+                    <p class="product_title">LONG HOP LAGER</p>
+                    <p><span class="product_price cider-price5">8.0</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+                <div class="box1 product beer6">
+                    <p class="product_title">JACK THE SIPPER</p>
+                    <p><span class="product_price cider-price6">7.5</span></p>
+                    <button class="add add-remove">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/cartFunction.min.js"></script>
+</body>
+
+</html>

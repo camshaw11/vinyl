@@ -1,0 +1,15 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+.stars {
+  bottom: 0;
+  left: 50px;
+  display: block;
+  width:70%;
+  height: 70%;
+  position: relative;
+  margin-left: 20px;
+  min-width: 50px;
+  min-height: 50px;
+  opacity: 0.8;
+}

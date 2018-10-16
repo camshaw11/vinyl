@@ -1,0 +1,56 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+img {
+	position: relative;
+	width: 100%;
+}
+
+#vinyl-logo {
+	z-index: -100;
+}
+
+.background-section {
+  display: block;
+  overflow: hidden;
+}
+
+#bg-texture {
+  position: absolute;
+ // height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.stars {
+  bottom: 0;
+  left: 50px;
+  display: block;
+  width:60%;
+  height: 60%;
+  position: relative;
+  margin-left: 20px;
+  min-width: 50px;
+  min-height: 50px;
+  opacity: 0.9;
+}
+
+#rotating-logo {
+  display: block;
+  width: 45%;
+  height: 45%;
+  position: relative;
+  margin: 3px auto;
+  margin-top: 100px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.rotate {
+      -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

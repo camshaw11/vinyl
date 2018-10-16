@@ -1,0 +1,209 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+
+.wrapper-beer {
+	margin-left: 5px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"a";
+}
+
+* {box-sizing: border-box;}
+.wrapper-menu {
+  max-width: 915px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.wrapper-menu > div {
+  //border: 8px dotted black;
+  //border-radius: thick;
+  //background-color: none;
+  padding: 1em;
+  color: #d9480f;
+}
+.wrapper-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(240px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  border: 8px dotted black;
+}
+.two { 
+  grid-column: 3 / 5;
+  grid-row: 1 / 5;
+  border-top: 8px dotted black;
+  border-right: 8px dotted black;
+  border-bottom: 8px dotted black;
+}
+.three {
+  grid-column: 1 / 3;
+  grid-row: 3 / 5;
+  border-left: 8px dotted black;
+  border-right: 8px dotted black;
+  border-bottom: 8px dotted black;
+}
+
+
+.wrapper-food {
+  margin-left: 5px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"a";
+}
+.wrapper-deals {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"a";
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+	margin-top: 80px;
+  margin-left: 0px;
+	display: grid;
+	grid-template-columns: 100%;
+//	grid-row-gap: 5px;
+ //	grid-auto-rows: 250px;
+ 	grid-template-areas: 
+  	"c"
+    "d"
+    "e"
+    "f";
+}
+
+.wrapper-order {
+  max-width: 915px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.wrapper-order > div {
+
+  padding: 1em;
+  color: #d9480f;
+}
+.wrapper-order {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 100px;
+  grid-auto-rows: minmax(300px, auto);
+}
+.platter {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  border: 8px dotted black;
+}
+
+.progress {
+  grid-column: 1 / 5;
+  grid-row: 2 / 4;
+  border: 8px dotted black;
+}
+
+#logo {
+	grid-area: c;
+	padding-bottom: 40px;
+	width: 100%;
+	margin: 0;
+    position: relative;
+    top: 130px;;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+	
+
+#beer-cider {
+	grid-area: d;
+}
+
+#beer-cider2 {
+	grid-area: a;
+}
+
+#food {
+	grid-area: e;
+}
+
+#food2 {
+	grid-area: a;
+}
+
+#deals {
+	grid-area: f;
+}
+#deals2 {
+	grid-area: a;
+}
+.wrapper > div {
+	padding: 1em;
+}
+
+.wrapper-beer > div {
+	padding: 1em;
+}
+.wrapper-food > div {
+	padding: 1em;
+}
+.wrapper-deals > div {
+	padding: 1em;
+}
+
+.monday {
+  grid-column: 1;
+  grid-row: 1;
+}
+.tuesday { 
+  grid-column: 2;
+  grid-row: 1;
+}
+.wednesday {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+.thursday {
+  grid-column: 1;
+  grid-row: 3;
+}
+.friday {
+  grid-column: 2;
+  grid-row: 3;
+}
+.saturday {
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+
+#daydeals {
+  margin-top: 0px;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 0px;
+  grid-auto-rows: minmax(205px, auto);
+
+  img {
+  display: block;
+  width:80%;
+  height: 80%;
+  position: relative;
+  margin: 3px auto;
+  min-width: 50px;
+  min-height: 50px;
+  }
+}
+
+#daydeals > div {
+ justify-self: stretch;
+ padding-bottom: 0px;
+ padding-right: 0px;
+}
+
