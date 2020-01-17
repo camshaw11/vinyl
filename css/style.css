@@ -851,6 +851,8 @@ td {
   }
   #resize h1 {
     color: black;
+    font-size: 30px;
+    line-height: 50px;
   }
   .wrapper {
     display: none;
