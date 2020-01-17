@@ -842,7 +842,9 @@ td {
 
 @media only screen and (min-width: 900px) {
   #resize {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -853,6 +855,9 @@ td {
     color: black;
     font-size: 30px;
     line-height: 50px;
+  }
+  #bg-texture {
+    display: none;
   }
   .wrapper {
     display: none;
